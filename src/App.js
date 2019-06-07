@@ -12,7 +12,8 @@ class App extends Component {
 
   //Your code here:
 componentDidMount = _ => {
-  this.interval = setInterval(clockTick, 1000)
+  // this.interval = setInterval(clockTick, 1000)
+  this.handleAddTimer
 }
 
 componentWillMount = _ => {
