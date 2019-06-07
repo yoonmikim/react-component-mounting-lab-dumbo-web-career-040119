@@ -8,21 +8,21 @@ class Timer extends Component {
   }
 
   // add your code here
-componentDidMount = _ => {
-  this.interval = setInterval(this.clockTick, 1000)
-}
+// componentDidMount = _ => {
+//   this.interval = setInterval(this.clockTick, 1000)
+// }
 
-componentWillMount = _ => {
-  clearInterval(this.interval);
-}
+// componentWillMount = _ => {
+//   clearInterval(this.interval);
+// }
 
-// componentDidMount() {
-//     this.interval = setInterval(this.clockTick, 1000)
-//   }
+componentDidMount() {
+    this.interval = setInterval(this.clockTick, 1000)
+  }
 
-//   componentWillUnmount() {
-//     clearInterval(this.interval)
-//   }
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
 
 
 
